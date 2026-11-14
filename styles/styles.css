@@ -1,5 +1,14 @@
+:root {
+    --heading-background-color: darkblue;
+    --heading-text-color: #333;
+    --heading-font: 'Montserrat', Helvetica, sans-serif;
+    --padding: 1rem;
+    --border: 1px solid black;
+    --box-shadow: 0 0 30px gray;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--heading-background-color);
     padding: 10px;
 }
 
@@ -15,15 +24,15 @@ main {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--heading-text-color);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border: var(--border);
+    padding: var(--padding);
+    box-shadow: var(--box-shadow);
 }
 
 p {
@@ -44,14 +53,9 @@ aside {
 aside img {
     width: 200px;
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-}
-
-main img {
-    width: 150px;
-    height: auto;
+    border: var(--border);
+    padding: var(--padding);
+    box-shadow: var(--box-shadow);
 }
 
 footer {
