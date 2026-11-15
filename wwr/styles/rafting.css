@@ -69,7 +69,7 @@ h1 {
     /*white text - make sure there is enough contrast with the background color*/
 }
 
-article {
+.hero article {
     top: 80px;
     left: 0;
     right: 0;
@@ -81,7 +81,7 @@ article {
 .hero article img {
     float: right;
     width: 125px;
-    border: 1px solid black;
+    border: 1px var(--accent2-color);
     box-shadow: 0 0 30px gray;
     margin: 0 0 1rem 1rem;
 }
