@@ -7,9 +7,9 @@
 :root {
     --primary-color: #055a05;
     /*forest green*/
-    --secondary-color: #f4a261;
+    --secondary-color: #fbe07e;
     /*warm sand*/
-    --accent1-color: #264653;
+    --accent1-color: #133543;
     /*dark slate blue*/
     --accent2-color: #e9c46a;
     /*light golden yellow*/
@@ -29,10 +29,67 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    position: relative;
+    align-items: center;
+
+}
+
+.history h2 {
+    grid-column: 1 / 4;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    align-items: center;
+}
+
+.history img {
+    width: 100%;
+    height: auto;
+}
+
+.history p {
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.adventure h2 {
+    grid-column: 1 / -1;
+}
+
+.adventure img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
 }
 
 nav,
@@ -41,6 +98,18 @@ section,
 article {
     margin: 16px;
     padding: 8px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 1rem;
+    color: rgb(3, 3, 94);
+}
+
+nav a {
+    text-decoration: none;
 }
 
 .socialmedia a {
@@ -74,6 +143,7 @@ h1 {
     left: 0;
     right: 0;
     position: absolute;
+    padding: 0;
     background-color: var(--secondary-color);
     color: black;
 }
@@ -83,5 +153,23 @@ h1 {
     width: 125px;
     border: 1px var(--accent2-color);
     box-shadow: 0 0 30px gray;
-    margin: 0 0 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    border-top: 1px solid #000;
+    text-align: center;
+    background-color: #232222;
+    color: #fff;
+    margin-bottom: 1rem;
+    padding: 0;
 }
